@@ -1,0 +1,35 @@
+$underline-height: 0.05em
+$underline-offset: 0.05em
+
+@mixin font-16
+	font-size: 1rem
+
+@mixin underline
+	display: inline
+	text-decoration: none
+	background-image: linear-gradient(to top, transparent, transparent $underline-offset, $black $underline-offset, $black ($underline-offset + $underline-height), transparent ($underline-offset + $underline-height))
+	text-shadow: -0.1em 0 0 #fff, 0.1em 0 0 #fff
+
+body
+	@include font-16
+	font-family: 'Alice', serif
+
+h1
+	font-size: 1.875rem
+
+h3
+	@include font-16
+	font-family: 'Lato', sans-serif
+
+a
+	@include underline
+	font-size: 1.875rem
+	color: $black
+	display: inline-block
+	text-decoration: none
+
+.text-center
+	display: block
+	text-align: center
+
+
