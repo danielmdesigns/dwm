@@ -1,33 +1,54 @@
-$underline-height: 0.05em
-$underline-offset: 0.05em
+*
+	font-smooth: always
+	text-rendering: optimizeLegibility
+	text-rendering: geometricPrecision
+	font-smoothing: antialiased
+	-moz-font-smoothing: antialiased
+	-webkit-font-smoothing: antialiased
+	-webkit-font-smoothing: subpixel-antialiased
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
 
 @mixin font-16
 	font-size: 1rem
 
-@mixin underline
-	display: inline
-	text-decoration: none
-	background-image: linear-gradient(to top, transparent, transparent $underline-offset, $black $underline-offset, $black ($underline-offset + $underline-height), transparent ($underline-offset + $underline-height))
-	text-shadow: -0.1em 0 0 #fff, 0.1em 0 0 #fff
+@mixin font-lato
+	font-family: 'Lato', "Helvetica Neue", Verdana, Helvetica, Arial, sans-serif
+@mixin font-alice
+	font-family: 'Alice', Georgia, Times, Garamond, Baskerville, "Times New Roman", serif
 
 body
 	@include font-16
-	font-family: 'Alice', serif
+	@include font-alice
 
 h1
+	margin: 1.25rem 0
 	font-size: 1.875rem
 
 h3
 	@include font-16
-	font-family: 'Lato', sans-serif
+	@include font-lato
+
+h3, p
+	margin: 1rem 0
 
 a
-	@include underline
-	font-size: 1.275rem
-	//font-size: 1.875rem
-	color: $black
 	display: inline-block
-	text-decoration: none
+	cursor: pointer
+	&.link_regular
+		@include font-16
+		font-weight: 400
+		color: $grey
+		transition: color 0.3s ease-in
+		&:hover
+			color: darken($grey, 10%)
+	&.link_callout
+		font-size: 1.275rem
+		//font-size: 1.875rem
+		color: $black
+		transition: color 0.3s ease-in
+		&:hover
+			color: lighten($black, 10%)
 
 .text-center
 	display: block
