@@ -33,7 +33,6 @@ h3, p
 	margin: 1rem 0
 
 a
-	display: inline-block
 	cursor: pointer
 	&.link_regular
 		@include font-16
@@ -41,6 +40,7 @@ a
 		color: $grey
 		transition: color 0.3s ease-in
 		&:hover
+			font-style: italic
 			color: darken($grey, 10%)
 	&.link_callout
 		font-size: 1.275rem
