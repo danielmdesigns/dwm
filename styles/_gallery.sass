@@ -1,0 +1,40 @@
+/* xs (1up) */
+.gallery
+	overflow: hidden
+	max-width: 76em
+	margin: 2.5rem auto
+	list-style: none
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.2)
+	background-color: rgba(0,0,0,0.2)
+
+.gallery-item
+	position: relative
+	cursor: pointer
+	display: inline-block
+	
+.gallery-item > a > img
+	display: block
+	max-width: 100%
+	opacity: 0.7
+	
+@media all and (max-width: 27em)
+	.gallery-item a
+		display: inline-block
+		margin-bottom: -4px
+
+/* small (2up) */
+@media all and (min-width: 27em)
+	.gallery-item
+		float: left
+		width: 50%
+
+/* medium (3up) */
+@media all and (min-width: 40em)
+	.gallery-item
+		width: 33.3333333%
+
+/* large (4up) */
+@media all and (min-width: 60em)
+	.gallery-item
+		//width: 25%
+
