@@ -10,7 +10,6 @@
 .gallery-item
 	position: relative
 	cursor: pointer
-	display: inline-block
 	
 .gallery-item > a > img
 	display: block
@@ -25,16 +24,11 @@
 /* small (2up) */
 @media all and (min-width: 27em)
 	.gallery-item
-		float: left
-		width: 50%
+		width: 100%
 
 /* medium (3up) */
 @media all and (min-width: 40em)
 	.gallery-item
+		float: left
 		width: 33.3333333%
-
-/* large (4up) */
-@media all and (min-width: 60em)
-	.gallery-item
-		width: 25%
 
