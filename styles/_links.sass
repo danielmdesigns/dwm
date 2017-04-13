@@ -1,0 +1,51 @@
+$underline-height: 0.045em
+$underline-offset: 0.04em
+
+@mixin underline
+	display: inline
+	text-decoration: none
+	background-image: linear-gradient(to top, transparent, transparent $underline-offset, $black $underline-offset, $black ($underline-offset + $underline-height), transparent ($underline-offset + $underline-height))
+	text-shadow: -0.1em 0 0 #fff, 0.1em 0 0 #fff
+
+
+
+
+a
+	cursor: pointer
+//regular link
+a.link-normal
+	@include font-16
+	display: inline-block
+	font-weight: 400
+	color: $grey
+	margin-bottom: 1rem
+	transition: color 1s ease
+	&:hover
+		//font-style: italic
+		color: $black
+//bold email link
+a.link-boldest
+	@include underline
+	display: inline-block
+	font-size: 1.575rem
+	color: $black
+	@media all and (min-width: 28.94rem)
+		font-size: 1.875rem
+//project navigation links
+.project-nav
+	display: block
+	clear: both
+	float: none
+	padding: 1.5rem 0 88px
+.project-prev,
+.project-next
+	font-size: 1.875rem
+	text-decoration: none
+	color: $grey
+	transition: color 1s ease
+	&:hover
+		color: $black
+.project-prev
+	float: left
+.project-next
+	float: right

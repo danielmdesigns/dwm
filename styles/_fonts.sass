@@ -20,6 +20,7 @@
 body
 	@include font-16
 	@include font-alice
+	color: $black
 
 h1
 	margin: 1.25rem 0
@@ -40,43 +41,7 @@ figcaption
 	font-size: 12px
 	text-align: center
 	font-style: italic
-
-a
-	cursor: pointer
-	&.link_regular
-		display: block
-		@include font-16
-		font-weight: 400
-		color: $grey
-		transition: color 0.3s ease-in
-		margin-bottom: 1rem
-		&:hover
-			font-style: italic
-			color: darken($grey, 10%)
-	&.link_callout
-		display: inline-block
-		clear: both
-		font-size: 1.275rem
-		color: $black
-		transition: color 0.3s ease-in
-		&:hover
-			color: lighten($black, 10%)
-	
-.prev-next
-	display: block
-	clear: both
-	float: none
-	padding: 1.5rem 0 76px
-.link-prev,
-.link-next
-	font-size: 1.875rem
-	text-decoration: none
-.link-prev
 	color: $grey
-	float: left
-.link-next
-	color: $black
-	float: right
 
 .text-center
 	display: block
