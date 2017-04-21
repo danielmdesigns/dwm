@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>The Design Portfolio of Daniel Maldonado</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="styles/styles.css">
+<link href="https://fonts.googleapis.com/css?family=Alice|Lato:400,700" rel="stylesheet">
+<link rel="icon" type="image/png" href="images/favicon.ico">
+<!-- Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-92995744-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</head>
+<body>
+
+<main>
+	
+	<a href="index.html"><img class="logo" src="images/dwm.png" alt=""></a>
+	<h3>Overview</h3>
+	<p>I wanted to design Symplist when I noticed my wife struggling to find a decent app that would effortlessly answer the question “yes” or “no”.  Determined to come up with a solution, I started to craft an application that would ideally be really good at that one thing. What I found was that it wasn’t just her, there were others searching for the answer to that same question. Allow me to explain how I provided people with an easier way to accomplish more.</p>
+	
+	<blockquote>“Symplist provides increased productivity to busy and active consumers by providing a minimal and elegant user-friendly environment focused on quick functionality, giving them a sense of accomplishment.”</blockquote>
+	
+	<figure>
+  	<img src="images/symplist-collage.png" alt="">
+  	<figcaption>Photo collection of during discovery, research and user testing phases</figcaption>
+	</figure>
+	
+	<h3>Problem</h3>
+	<ul>
+		<li>Users spend more time setting parameters <em>(calendars, times, filters, etc.)</em> than completing tasks <em>(average time per use was 15.59s)</em> using alternate methods</li>
+		<li>People are still using envelope, scrap paper, etc., to create to-dos</li>
+		<li>Users need an easy way to add/remove items while engaged in a particular task</li>
+		<li>58%+ of people who answered are unsatisfied with their current task management tools</li>
+	</ul>
+	
+	<h3>Challenges</h3>
+	<ul>
+		<li>The learnability of how to use progressive web applications</li>
+		<li>Database management when an update or change is detected</li>
+		<li>Building a minimal working digital experience for users to keep track of tasks</li>
+		<li>Flexible product structure that looks great regardless of device or operating system</li>
+	</ul>
+	
+	<h3>Audience</h3>
+	<p>9 participants took part in interviews that enabled me to learn and validate my assumptions that converted into personas. Some of this qualitative research was achieved guerrilla style, while others were held more formally to establish common frustrations and goals.</p>
+	
+	<figure>
+  	<img src="images/symplist-personas.png" alt="">
+  	<figcaption>Personas that I used during the duration of this project</figcaption>
+	</figure>
+	
+	<h3>Use Cases</h3>
+	<p>Based on the personas, storyboards were created to aid the types of situations this app would be used in. This allowed insight into interactions on how our audience needs to receive feedback in order to circumvent a poor experience both in the moment and while using the app.</p>
+	
+	<figure>
+  	<img class="has-dropshadow" src="images/symplist-storyboard-1.jpg" alt="">
+  	<img class="has-dropshadow" src="images/symplist-storyboard-2.jpg" alt="">
+  	<figcaption>Drawn storyboards of scenarios</figcaption>
+	</figure>
+	
+	<p>I enjoy storyboards because they help fill in the gaps of my initial research. I can iterate on original ideas by visualizing these scenarios that conceptualize into wireframes and prototypes. An example of this would be sketching when the keyboard becomes visible.</p>
+	
+	<h3>User Testing</h3>
+	<p>Six participants took part in moderated usability sessions for three low fidelity prototypes. Each user walked through a series of tasks that was recorded and compiled to show their successes and failures. Afterwards, our volunteers verbalized their experiences, affording a clear understanding of trends that needed to be corrected.</p>
+	
+	<h3>Version 1.0</h3>
+	<ul>
+		<li>Shipped the closed beta version</li>
+		<li>Users want to tap “add” rather than tapping “input” to add a list item</li>
+		<li>Users had no way to cancel the input</li>
+		<li>On mobile, users did not like how the button floated out of its original state when the keyboard was initiated</li>
+	</ul>
+	
+	<h3>Version 2.0</h3>
+	<ul>
+		<li>Version 2.0 was built on Google’s Material Design Lite front end template framework. It was discovered that users are much more familiar with this layout pattern, even faithful iPhone users</li>
+		<li>Participants were interested in learning how to download the app since it wasn’t native or available within their carriers app stores</li>
+		<li>No visual feedback when all actions are completed</li>
+	</ul>
+	
+	<h3>Version 3.0</h3>
+	<ul>
+		<li>Introduced new brand identity</li>
+		<li>Out of the box, MDL menu navigation caused unnecessary confusion. Due to this, condensed navigation into a single menu</li>
+		<li>Symplist shipped!</li>
+	</ul>
+	
+	<h3>Survey Results</h3>
+	<p>Additionally, a survey was used to better understand how the application iconography would be understood. This provided great insight for such a small feature.</p>
+	
+	<h3>Development</h3>
+	<p>In order to make Symplist a reality I needed to craft a progressive web application using HTML5, CSS/Sass, JavaScript, and jQuery due to my lack of Swift knowledge.</p>
+	<p>Take a look at some HTML prototypes...
+App Prototype: https://goo.gl/UWOyfN, Mobile Keyboard on Focus: https://goo.gl/g6gt95, Click test, accepting user inputs: https://goo.gl/a3rHLd, Priority Prototype: https://goo.gl/NX8KQj, Custom Prompt: https://goo.gl/Ha7VYl, MDL Prototype: https://goo.gl/2TTfZG, Button Ripple Prototype: https://goo.gl/xy8uky, Blur: https://goo.gl/6MgXy4, List Items: https://goo.gl/BRUvE1</p>
+	<p>I faced a few challenges, one being I know nothing of databases. Conveniently, HTML5 provides a web API property that allows browsers to store data locally. While most of this went smoothly, it took me a solid week and help in StackOverflow to learn to update the lists properly after a modification.</p>
+	<p>Usability testing made it clear there needed to be a screen for visual feedback when the view was empty. This was accomplished by checking the number of items in the list — which would then hide or show a graphic based on the results of that conditional statement.</p>
+	<p>Feel free to view the source publicly on <a class="link-normal" href="#" target="_blank">GitHub</a>.</p>
+	
+	<h3>Results</h3>
+	<p>In the end, I had to compromise several features that I simply couldn’t build in efforts to get a working product shipped. Categorizing tasks into specific lists, ability to rearrange/edit tasks and sharing your list with others are all things I am still figuring out. Not only in regards to development, but also designing scalable, usable and delightful experiences for future releases.</p>
+	<p>After just a few months Symplist had saved an average usage time of ~7.43s on a handful of downloads. I also managed a 200-300ms improvement on render time between versions 2 & 3. There’s more work to do, but I am pleased with the results!</p>
+	
+	<div class="project-nav">
+		<a class="project-prev" href="index.html">Home</a>
+		<a class="project-next" href="#">Next</a>
+	</div>
+
+	<footer class="text-center">
+		<a class="link-boldest" href="mailto:daniel@danielmdesigns.com?subject=New%20submission!">daniel@danielmdesigns.com</a>
+	</footer>
+	
+</main>
+
+</body>
+</html>
