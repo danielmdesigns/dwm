@@ -2,8 +2,8 @@
 @import colors
 @import fonts
 @import links
-//@import gallery
-@import gallery-3x
+//@import galleryLg
+@import gallerySm
 
 *
 	margin: 0
@@ -28,6 +28,15 @@ img.logo-center
 	display: block
 	margin: 1.875rem auto 2.5rem
 
+blockquote
+	display: block
+	color: $black
+	font-style: italic
+	width: 75%
+	text-align: center
+	margin: 0 auto 3rem
+	border-left: 2px solid $grey
+
 figure > img
 	display: block
 	margin: 1.25rem auto 0.625rem
@@ -35,7 +44,19 @@ figure > img
 	max-width: 750px
 	margin-top: 1.25rem
 	margin-bottom: 0.625rem
-	box-shadow: 0 0 20px 0 rgba(0,0,0,0.2)
 figcaption
 	margin-bottom: 2rem
+
+ul
+	margin-left: 40px
+	margin-bottom: 1.875rem
+	width: 75%
+
+footer
+	margin-top: 2.5rem
+
+.is-hidden
+	display: none
+.has-dropshadow
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.2)
 	
