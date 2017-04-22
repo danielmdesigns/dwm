@@ -18,10 +18,9 @@ a.link-normal
 	display: inline-block
 	font-weight: 400
 	color: $grey
-	margin-bottom: 1rem
+	//margin-bottom: 1rem
 	transition: color 1s ease
-	&:hover
-		//font-style: italic
+	&:hover, &:active
 		color: $black
 //bold email link
 a.link-boldest
@@ -36,7 +35,7 @@ a.link-boldest
 	display: block
 	clear: both
 	float: none
-	padding: 1.5rem 0 88px
+	padding: 1.5rem 0 50px
 .project-prev,
 .project-next
 	font-size: 1.875rem
@@ -49,3 +48,16 @@ a.link-boldest
 	float: left
 .project-next
 	float: right
+
+
+.fa
+	color: $grey
+	text-decoration: none
+	margin: 3.5rem 0.625rem
+	display: inline-block
+	transition: color 1s ease
+	&:hover, &:active
+		color: $black
+
+a.fa.fa-twitter, a.fa.fa-dribbble, a.fa.fa-behance, a.fa.fa-linkedin, a.fa.fa-codepen, a.fa.fa-github
+	font-size: 1.25rem
