@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <link rel="stylesheet" href="styles/styles.css">
 <link href="https://fonts.googleapis.com/css?family=Alice|Lato:400,700" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <link rel="icon" type="image/png" href="images/favicon.ico">
 <!-- Analytics -->
 <script>
@@ -22,6 +23,12 @@
 <main>
 	
 	<a href="index.html"><img class="logo" src="images/dwm.png" alt=""></a>
+	
+	<figure>
+  	<img src="images/symplist-app.png" alt="">
+  	<figcaption>Symplist is a dead-simple way to stay on top of your tasks and get more done quickly.</figcaption>
+	</figure>
+	
 	<h3>Overview</h3>
 	<p>I wanted to design Symplist when I noticed my wife struggling to find a decent app that would effortlessly answer the question “yes” or “no”.  Determined to come up with a solution, I started to craft an application that would ideally be really good at that one thing. What I found was that it wasn’t just her, there were others searching for the answer to that same question. Allow me to explain how I provided people with an easier way to accomplish more.</p>
 	
@@ -29,7 +36,7 @@
 	
 	<figure>
   	<img src="images/symplist-collage.png" alt="">
-  	<figcaption>Photo collection of during discovery, research and user testing phases</figcaption>
+  	<figcaption>Collection of photos documented during discovery, research and user testing phases</figcaption>
 	</figure>
 	
 	<h3>Problem</h3>
@@ -53,7 +60,7 @@
 	
 	<figure>
   	<img src="images/symplist-personas.png" alt="">
-  	<figcaption>Personas that I used during the duration of this project</figcaption>
+  	<figcaption>Personas used during the duration of this project</figcaption>
 	</figure>
 	
 	<h3>Use Cases</h3>
@@ -67,8 +74,18 @@
 	
 	<p>I enjoy storyboards because they help fill in the gaps of my initial research. I can iterate on original ideas by visualizing these scenarios that conceptualize into wireframes and prototypes. An example of this would be sketching when the keyboard becomes visible.</p>
 	
+	<figure>
+  	<img class="has-dropshadow" src="images/symplist-sketches.jpg" alt="">
+  	<figcaption>A pile of sketches that were created to find the perfect design</figcaption>
+	</figure>
+	
 	<h3>User Testing</h3>
 	<p>Six participants took part in moderated usability sessions for three low fidelity prototypes. Each user walked through a series of tasks that was recorded and compiled to show their successes and failures. Afterwards, our volunteers verbalized their experiences, affording a clear understanding of trends that needed to be corrected.</p>
+	
+	<figure>
+  	<img class="has-dropshadow" src="images/symplist-usertesting.png" alt="">
+  	<figcaption>Testing provided opportunites to improve the usability and design</figcaption>
+	</figure>
 	
 	<h3>Version 1.0</h3>
 	<ul>
@@ -77,6 +94,7 @@
 		<li>Users had no way to cancel the input</li>
 		<li>On mobile, users did not like how the button floated out of its original state when the keyboard was initiated</li>
 	</ul>
+	<p><a class="link-normal" href="https://goo.gl/LGv66b" target="_blank">View Prototype 1.0</a></p>
 	
 	<h3>Version 2.0</h3>
 	<ul>
@@ -84,6 +102,7 @@
 		<li>Participants were interested in learning how to download the app since it wasn’t native or available within their carriers app stores</li>
 		<li>No visual feedback when all actions are completed</li>
 	</ul>
+	<p><a class="link-normal" href="https://goo.gl/Hsc1EO" target="_blank">View Prototype 2.0</a></p>
 	
 	<h3>Version 3.0</h3>
 	<ul>
@@ -91,29 +110,59 @@
 		<li>Out of the box, MDL menu navigation caused unnecessary confusion. Due to this, condensed navigation into a single menu</li>
 		<li>Symplist shipped!</li>
 	</ul>
+	<p><a class="link-normal" href="https://goo.gl/mxJplj" target="_blank">View Prototype 3.0</a></p>
+	
+	<figure>
+  	<img class="has-dropshadow" src="images/symplist-design-evolution.png" alt="">
+  	<figcaption>An overview of the apps design evolution</figcaption>
+	</figure>
 	
 	<h3>Survey Results</h3>
-	<p>Additionally, a survey was used to better understand how the application iconography would be understood. This provided great insight for such a small feature.</p>
+	<p>After the 2nd design version, a survey was used to better understand how the application iconography would be understood. This provided great insight for such a small feature.</p>
+	
+	<figure>
+  	<img src="images/symplist-survey.png" alt="">
+  	<figcaption>Interesting results on what icons users understood best for completion of tasks</figcaption>
+	</figure>
 	
 	<h3>Development</h3>
-	<p>In order to make Symplist a reality I needed to craft a progressive web application using HTML5, CSS/Sass, JavaScript, and jQuery due to my lack of Swift knowledge.</p>
-	<p>Take a look at some HTML prototypes...
-App Prototype: https://goo.gl/UWOyfN, Mobile Keyboard on Focus: https://goo.gl/g6gt95, Click test, accepting user inputs: https://goo.gl/a3rHLd, Priority Prototype: https://goo.gl/NX8KQj, Custom Prompt: https://goo.gl/Ha7VYl, MDL Prototype: https://goo.gl/2TTfZG, Button Ripple Prototype: https://goo.gl/xy8uky, Blur: https://goo.gl/6MgXy4, List Items: https://goo.gl/BRUvE1</p>
+	<p>In order to make Symplist a reality I needed to craft a progressive web application using HTML5, CSS/Sass, JavaScript, and jQuery due to my lack of Swift knowledge. Take a look at some of the HTML prototypes tested throughout the project, <a a class="link-normal" href="">here</a>.</p>
+
 	<p>I faced a few challenges, one being I know nothing of databases. Conveniently, HTML5 provides a web API property that allows browsers to store data locally. While most of this went smoothly, it took me a solid week and help in StackOverflow to learn to update the lists properly after a modification.</p>
+	
+	<figure>
+  	<img class="has-dropshadow" src="images/symplist-localStorage.png" alt="">
+  	<figcaption>Using HTML5 localStorage to save data</figcaption>
+	</figure>
+	
 	<p>Usability testing made it clear there needed to be a screen for visual feedback when the view was empty. This was accomplished by checking the number of items in the list — which would then hide or show a graphic based on the results of that conditional statement.</p>
-	<p>Feel free to view the source publicly on <a class="link-normal" href="#" target="_blank">GitHub</a>.</p>
+	
+	<figure>
+  	<img class="has-dropshadow" src="images/symplist-emptyState.png" alt="">
+  	<figcaption>Giving users a empty screen message if their list is completed</figcaption>
+	</figure>
+	
+	<p>Feel free to view the source code publicly on <a class="link-normal" href="https://github.com/danielmdesigns/symplist" target="_blank">GitHub</a>.</p>
 	
 	<h3>Results</h3>
 	<p>In the end, I had to compromise several features that I simply couldn’t build in efforts to get a working product shipped. Categorizing tasks into specific lists, ability to rearrange/edit tasks and sharing your list with others are all things I am still figuring out. Not only in regards to development, but also designing scalable, usable and delightful experiences for future releases.</p>
-	<p>After just a few months Symplist had saved an average usage time of ~7.43s on a handful of downloads. I also managed a 200-300ms improvement on render time between versions 2 & 3. There’s more work to do, but I am pleased with the results!</p>
+	<p>After just a few months Symplist had saved an average usage time of ~7.43s on a handful of downloads. I also managed a 200-300ms improvement on render time between versions 2 & 3. There’s more work to do, but I am pleased with the results! <a class="link-normal" href="http://www.symplistapp.com" target="_blank">Download it here.</a></p>
 	
 	<div class="project-nav">
 		<a class="project-prev" href="index.html">Home</a>
-		<a class="project-next" href="#">Next</a>
+		<a class="project-next" href="wcc.html">Next</a>
 	</div>
 
 	<footer class="text-center">
 		<a class="link-boldest" href="mailto:daniel@danielmdesigns.com?subject=New%20submission!">daniel@danielmdesigns.com</a>
+		<div class="social">
+			<a href="https://dribbble.com/danielmdesigns" target="_blank" class="fa fa-dribbble"></a>
+			<a href="https://www.behance.net/danielmdesigns" target="_blank" class="fa fa-behance"></a>
+			<a href="https://www.linkedin.com/in/danielwmaldonado/" target="_blank" class="fa fa-linkedin"></a>
+			<a href="https://twitter.com/danielmdesigns" target="_blank" class="fa fa-twitter"></a>
+			<a href="http://codepen.io/danielmdesigns/pens/public/" target="_blank" class="fa fa-codepen"></a>
+			<a href="https://github.com/danielmdesigns" target="_blank" class="fa fa-github"></a>
+		</div>
 	</footer>
 	
 </main>
