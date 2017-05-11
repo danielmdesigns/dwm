@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>The Design Portfolio of Daniel Maldonado</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="styles/styles.css">
+<link href="https://fonts.googleapis.com/css?family=Alice|Lato:400,700" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="icon" type="image/png" href="images/favicon.ico">
+<!-- Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-92995744-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</head>
+<body>
+
+<main>
+	
+	<a href="index.html"><img class="logo" src="images/dwm.png" alt=""></a>
+	<h3>Overview</h3>
+	<p>Count was a side project specific to rejuvenating dull and tired calculators. The challenge was to create something usable and beautiful. As a casual user myself, I found that the free and paid number crunchers in the App Store were too complex, unintuitive or just plain boring. The solution created was largely influenced by my own personal experiences.</p>
+	
+	<blockquote>"Count is a fashionable calculator that allows you to do math quickly without the hassle of ever having to think about it. Same outcome, just a better experience!"</blockquote>
+	
+	<figure>
+  	<img src="images/count/count-collage.png" alt="">
+  	<figcaption>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</figcaption>
+	</figure>
+	
+	<h3>Problem</h3>
+	<p>To start, I began researching the history of PDAs. A flood of questions came to mind when I thought about calculators, their design, and overall use. I was curious to explore other creative ways to accommodate users like myself who faced similar issues.</p>
+	<ol>
+		<li><span class="bold-sansSerif">What's actually being used?</span> Math alone can get overwhelming quick, so what are the essential mathematical functions we need? Why are some keys twice the size of others? Why is the equal key so teensy? 00s? What do some of these even do?</li>
+		<li><span class="bold-sansSerif">Button architecture.</span> The location, arrangement and architecture of most calculators have worked for many years. But think, could this be better? The equal button is the most often used action because it is vital in evaluating the result of every operation.</li>
+		<li><span class="bold-sansSerif">They're ugly!</span> At the end of the day, who really cares if a hideous tool gets the job done, as long as it’s correct, right? This would merely be a cherry on top.</li>
+	</ol>
+	
+	<figure>
+  	<img class="has-dropshadow" src="images/count/count-infographic.jpg" alt="">
+  	<figcaption>Results of interviewing and surveying 22 individuals on using calculators.</figcaption>
+	</figure>
+	
+	<h3>Discovery</h3>
+	<p>Surveys were filled out anonymously to get the ball rolling. I conducted in-person interviews shortly thereafter to gain further insights. By listening, observing, and taking notes on how people performed basic arithmetic, this is what I found:</p>
+	<ol>
+		<li><span class="bold-sansSerif">Designed for average people.</span> Not everybody needs square root, memory storage, fractions, etc., etc. Outside of 10 keys and basic functions, 12 of 16 test subjects demonstrated that they wouldn’t use additional keys even if they are available. For example, most people would delete the entire expression if they made a mistake in contrast to using the ‘DEL’ or ‘C’ operation.</li>
+		<li><span class="bold-sansSerif">It's easy to use.</span> There should be nothing to learn. No onboarding process, start up screens or walkthroughs necessary. In most cases, users need the result as soon as the application is opened.</li>
+		<li><span class="bold-sansSerif">Very fast.</span> While the problem is still memorized, people need to input these values to obtain the results quickly. Meaning, the app should be quick to open, quick to input, and quick to receive an answer.</li>
+	</ol>
+	
+	<figure>
+  	<img class="has-dropshadow" src="images/count/count-moodboard.jpg" alt="">
+  	<figcaption>Analyzing designs, architecture, functions and more.</figcaption>
+	</figure>
+	
+	<h3>User Stories</h3>
+	<p>It was important to truly empathize the juncture in time that a calculator is used. User stories based on all of the aforementioned data collected was one of the best ways to accomplish the task. Quick, brief statements allowed to quickly identify the user and their need(s) while safely iterating over ideas to resolve them.</p>
+	
+	<p>[ need picture of flashcards ]</p>
+	
+	<h3>Sketching</h3>
+	<p>Focused on improving speed and usability, the most unique aspect of the app was placement of the equality button. Intriguing articles on [alistapart] and [uxmatters] regarding how owners hold their devices, screen sizes increasing and in popularity it was imperative to analyze an alternative.</p>
+	
+	<figure>
+  	<img src="images/count/count-sketches.png" alt="">
+  	<figcaption>Sketching and brainstorming calculator concepts based on data.</figcaption>
+	</figure>
+	
+	<h3>Prototyping</h3>
+	<p>After brainstorming, lo-fidelity prototypes were developed. With the iOS calculator app being the baseline, small modifications were made to the arrangement of operations, integer patterns, as well as adding and/or removing seldom used formulas.</p>
+	
+	<p>[ need picture of protypes ]</p>
+	
+	<h3>Design</h3>
+	<p>Initial scope was to encompass an ‘all-in-one’ application that would provide basic calculator functionality along with tip splitting and percentage computing. Unfortunately, I needed to scale back my intentions so that I could focus on releasing an operative product.</p>
+	
+	<figure>
+  	<img style="max-width: 398px" class="has-dropshadow" src="images/count/count-gif.gif" alt="">
+  	<figcaption>High fidelity animated gif using COUNT for simple math.</figcaption>
+	</figure>
+	
+	<p>App architecture was based on direct feedback, user testing and iteration. Users already familiar with common button layouts took longer to complete tasks on contrasting prototypes. That said, participants felt that ‘C’, meaning clear, was more clear than ‘AC’. Additionally, the decimal ‘.’ was placed on the left hand side due to its infrequent use. Finally, the equality operator scored admirably for its accessibility, which was a leading goal.</p>
+	
+	<figure>
+  	<img src="images/count/count-mockup.png" alt="">
+  	<figcaption>Final design and solution implementation.</figcaption>
+	</figure>
+	
+	<p>Interface is constructed of a beautiful relaxing gradient, uses one consistent typeface, Roboto, with various font weights to ensure readability and typographical hierarchy. It also contains subtle, yet smooth digit transitions. The icon resembles a pie chart where 25% of the smile makes up the whole.</p>
+	
+	<figure>
+  	<img class="has-dropshadow" src="images/count/count-styleguide.jpg" alt="">
+  	<figcaption>Short style guide composed of colors, gradients, and typography.</figcaption>
+	</figure>
+	
+	<h3>Development</h3>
+	<p>In order to spell out what the application would do for people using it, there needed to be a high level set of requirements to work from. At the core, it was desired that:</p>
+	<ol>
+		<li>As a user, I can add, subtract, multiply and/or divide two numbers</li>
+		<li>As a user, I can erase the input with a clear button</li>
+		<li>As a user, I can continue chaining mathematical operations together until I tap the equal button, and the calculator will display the correct result</li>
+	</ol>
+	
+	<p>This was the first time I used flexbox on a project and I was thrilled at how well it worked and how flexible it was. I sprinkled in a few micro interactions for feedback, and we had ourselves an app.</p>
+	
+	<p>Other features included checking for display length and decreasing the font size if the equation exceeded view. Somehow I managed to hack my way through JavaScript regular expressions to swap keyboard operators ‘*’ & ‘/’ for multiplication and division symbols ‘×’ & ‘÷’.</p>
+	
+	<figure>
+  	<img class="has-dropshadow" src="images/count/count-regEx.png" alt="">
+  	<figcaption>Using JavaScript regular expressions to alternate symbols/operators.</figcaption>
+	</figure>
+	
+	<p>Delays on user tap gestures forced me to hook a wondrous library, fastclick.js to solve a 300ms lag on touch UIs. Super easy implementation against other polyfills and plugins previously used in the past. Keycodes for keypad conversion were also quite complicated to make compatible across all browsers. Unfortunately, I was unable to develop a Google Chrome extension due to the slow and unsafe eval() method.</p>
+	
+	<figure>
+  	<img class="has-dropshadow" src="images/count/count-keyCodes.png" alt="">
+  	<figcaption>Giving accessibility to phones, tablets, desktops, and keyboards.</figcaption>
+	</figure>
+	
+	<h3>Looking Forward</h3>
+	<p>After two months of developing and roughly a month of research, COUNT was deployed and marketed mostly via word of mouth. Adding tip and percentage components are still very honest goals that hopefully come sooner than later. Producing a desktop or browser version is also highly desired. While I believe this was a successful first stab, the final design undoubtedly is not the only way to solve this particular problem. In fact, it would be wonderful to continue testing and iterating concepts that would generate and validate alternate solutions.</p>
+	
+	<p>Download <a class="link-normal" href="http://www.danielmdesigns.com/app/countapp/" target="_blank">COUNT</a>, view the source publicly on <a class="link-normal" href="https://github.com/danielmdesigns/countapp" target="_blank">GitHub</a>, or view a visual case study on <a class="link-normal" href="" target="_blank">Bēhance</a>.</p>
+
+	<div class="project-nav">
+		<a class="project-prev" href="index.html">Home</a>
+		<a class="project-next" href="symplist.html">Next</a>
+	</div>
+
+	<footer class="text-center">
+		<a class="link-boldest" href="mailto:daniel@danielmdesigns.com?subject=New%20submission!">daniel@danielmdesigns.com</a>
+		<div class="social">
+			<a href="https://dribbble.com/danielmdesigns" target="_blank" class="fa fa-dribbble"></a>
+			<a href="https://www.behance.net/danielmdesigns" target="_blank" class="fa fa-behance"></a>
+			<a href="https://www.linkedin.com/in/danielwmaldonado/" target="_blank" class="fa fa-linkedin"></a>
+			<a href="https://twitter.com/danielmdesigns" target="_blank" class="fa fa-twitter"></a>
+			<a href="http://codepen.io/danielmdesigns/pens/public/" target="_blank" class="fa fa-codepen"></a>
+			<a href="https://github.com/danielmdesigns" target="_blank" class="fa fa-github"></a>
+		</div>
+	</footer>
+	
+</main>
+
+</body>
+</html>
