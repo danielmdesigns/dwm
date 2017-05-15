@@ -10,8 +10,16 @@
 	padding: 0
 	
 body
+	height: 100%
 	padding: 40px
 	background-color: $background-grey
+	animation: fadein 1.5s ease-out 1
+
+@keyframes fadein
+	0%
+		opacity: 0
+	100%
+		opacity: 1
 
 h1
 	color: $black
