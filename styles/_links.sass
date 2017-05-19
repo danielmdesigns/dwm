@@ -13,17 +13,18 @@ $underline-offset: 0.04em
 a
 	cursor: pointer
 //regular link
-a.link-normal
+a.link-normal:link,
+a.link-normal:visited
 	@include font-16
 	display: inline-block
 	font-weight: 400
 	color: $grey
-	//margin-bottom: 1rem
 	transition: color 1s ease
-	&:hover, &:active
+	&:hover, &:active, &:focus
 		color: $black
 //bold email link
-a.link-boldest
+a.link-boldest:link,
+a.link-boldest:visited
 	@include underline
 	display: inline-block
 	font-size: 1.575rem
@@ -36,27 +37,30 @@ a.link-boldest
 	clear: both
 	float: none
 	padding: 1.5rem 0 50px
-.project-prev,
-.project-next
+a.project-prev:link,
+a.project-prev:visited,
+a.project-next:link,
+a.project-next:visited
 	font-size: 1.875rem
 	text-decoration: none
 	color: $grey
 	transition: color 1s ease
-	&:hover
+	&:hover, &:active, &:focus
 		color: $black
-.project-prev
+a.project-prev
 	float: left
-.project-next
+a.project-next
 	float: right
 
 
-.fa
+a.fa:link,
+a.fa:visited
 	color: $grey
 	text-decoration: none
 	margin: 3.5rem 0.625rem 0
 	display: inline-block
 	transition: color 1s ease
-	&:hover, &:active
+	&:hover, &:active, &:focus
 		color: $black
 
 a.fa.fa-twitter, a.fa.fa-dribbble, a.fa.fa-behance, a.fa.fa-linkedin, a.fa.fa-codepen, a.fa.fa-github
