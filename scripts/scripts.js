@@ -20,4 +20,14 @@ if(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)){
   $(".gallery-item > a > img").css({"opacity": "1"});
 }
 	
+//BACK TO TOP
+$("#js-top").on("click", function(){
+  if($(window).scrollTop() > 0){
+	$("html, body").animate({scrollTop: 0}, 1500);
+	return false;
+  }else{
+	//alert("I'm already at the top bro!");
+  }
+});
+	
 });
