@@ -15,7 +15,7 @@ $(".gallery-item > a > img").hover(function(){
 	$(this).stop().animate({"opacity": "0.7"}, "slow");
 });
 
-IF HANDHELD, ALL PHOTOS 100% OPACITY
+//IF HANDHELD, ALL PHOTOS 100% OPACITY
 if(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)){
   $(".gallery-item > a > img").css({"opacity": "1"});
 }
