@@ -9,16 +9,16 @@ $("#js-readme").on("click", function(e){
 });
 	
 //GALLERY MOUSE HOVER
-//$(".gallery-item > a > img").hover(function(){
-//	$(this).stop().animate({"opacity": "1"}, "slow");
-//},function(){
-//	$(this).stop().animate({"opacity": "0.7"}, "slow");
-//});
+$(".gallery-item > a > img").hover(function(){
+	$(this).stop().animate({"opacity": "1"}, "slow");
+},function(){
+	$(this).stop().animate({"opacity": "0.7"}, "slow");
+});
 
-//IF HANDHELD, ALL PHOTOS 100% OPACITY
-//if(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)){
-//  $(".gallery-item > a > img").css({"opacity": "1"});
-//}
+IF HANDHELD, ALL PHOTOS 100% OPACITY
+if(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)){
+  $(".gallery-item > a > img").css({"opacity": "1"});
+}
 	
 //BACK TO TOP
 $("#js-top").on("click", function(){
