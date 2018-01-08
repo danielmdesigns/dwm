@@ -6,143 +6,137 @@
 @import gallerySm
 
 *
-	margin: 0
-	padding: 0
+  margin: 0
+  padding: 0
 	
 body
-	height: 100%
-	padding: 40px
-	background-color: $background-grey
-	//animation: fadein 1.5s ease-out 1
+  height: 100%
+  padding: 40px
+  background-color: $background-grey
+  //animation: fadein 1.5s ease-out 1
 
 @keyframes fadein
-	0%
-		opacity: 0
-	100%
-		opacity: 1
+  0%
+    opacity: 0
+  100%
+    opacity: 1
 
 h1
-	color: $black
+  color: $black
 
 main
-	width: 100%
-	max-width: 860px
-	margin: 0 auto
+  width: 100%
+  max-width: 860px
+  margin: 0 auto
 
 .readme
-	margin-top: 1rem
-
-//img.logo
-//	display: block
-//	margin: 1.875rem 0 2.5rem
-//img.logo-center
-//	display: block
-//	margin: 1.875rem auto 2.5rem
+  margin-top: 1rem
 
 img.logo
-	display: block
-	margin: 0 auto 2.5rem
+  display: block
+  margin: 0 auto 2.5rem
+  width: 50px
 
 blockquote
-	display: block
-	color: $black
-	font-style: italic
-	width: 50%
-	text-align: center
-	margin: 0 auto 3rem
-	border-left: 2px solid $grey
-	padding-left: 0.625rem
-	@media(max-width: 40em)
-		width: 100%
+  display: block
+  color: $black
+  font-style: italic
+  width: 50%
+  text-align: center
+  margin: 0 auto 3rem
+  border-left: 2px solid $grey
+  padding-left: 0.625rem
+  @media(max-width: 40em)
+    width: 100%
 
 figure > img
-	display: block
-	margin: 1.25rem auto 0.625rem
-	width: 100%
-	max-width: 700px
-	margin-top: 1.25rem
-	margin-bottom: 0.625rem
+  display: block
+  margin: 1.25rem auto 0.625rem
+  width: 100%
+  max-width: 700px
+  margin-top: 1.25rem
+  margin-bottom: 0.625rem
 figcaption
-	margin-bottom: 2rem
+  margin-bottom: 2rem
 
 ul, ol
-	//margin-left: 40px
-	margin: 0 auto 1.875rem
-	width: 75%
-	max-width: 550px
+  //margin-left: 40px
+  margin: 0 auto 1.875rem
+  width: 75%
+  max-width: 550px
 	
 li
-	line-height: 24px
+  line-height: 24px
 
 ol li
-	padding-bottom: 10px
+  padding-bottom: 10px
 
 footer
-	margin: 2.5rem 0 0
+  margin: 2.5rem 0 0
 
 .is-hidden
-	display: none
+  display: none
 .has-dropshadow
-	box-shadow: 0 0 20px 0 rgba(0,0,0,0.2)
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.2)
 
 .back-to-top
-	line-height: 50px
-	position: fixed
-	right: 20px
-	bottom: 20px
-	width: 50px
-	height: 50px
-	cursor: pointer
-	transition: background-color .5s ease-in
-	text-align: center
-	color: $background-grey
-	border-radius: 100%
-	background-color: $black
-	box-shadow: 0 0 20px 0 rgba(0,0,0,0.2)
+  line-height: 50px
+  position: fixed
+  right: 20px
+  bottom: 20px
+  width: 50px
+  height: 50px
+  cursor: pointer
+  transition: background-color .5s ease-in
+  text-align: center
+  color: $background-grey
+  border-radius: 100%
+  background-color: $black
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.2)
 @media(min-width: 27em)
-	.back-to-top
-		right: 40px
-		bottom: 40px
+  .back-to-top
+    right: 40px
+    bottom: 40px
 	
 .back-to-top:hover
-	background-color: $black
+  background-color: $black
 
 .back-to-top:active
-	transform: scale(.97)
+  transform: scale(.97)
 
 	
 .slideLeft
-	visibility: visible !important
-	animation: slideLeft 1s ease-in-out
-	-webkit-animation: slideLeft 1s ease-in-out
-	-moz-animation: slideLeft 1s ease-in-out
+  visibility: visible !important
+  animation: slideLeft 1s ease-in-out
+  -webkit-animation: slideLeft 1s ease-in-out
+  -moz-animation: slideLeft 1s ease-in-out
 
 @keyframes slideLeft
-	0%
-		transform: translateX(150%)
-	50%
-		transform: translateX(-8%)
-	65%
-		transform: translateX(4%)
-	80%
-		transform: translateX(-4%)
-	95%
-		transform: translateX(2%)
-	100%
-		transform: translateX(0%)
+  0%
+    transform: translateX(150%)
+  50%
+    transform: translateX(-8%)
+  65%
+    transform: translateX(4%)
+  80%
+    transform: translateX(-4%)
+  95%
+    transform: translateX(2%)
+  100%
+    transform: translateX(0%)
 @-webkit-keyframes slideLeft
-	0%
-		-webkit-transform: translateX(150%)
-	50%
-		-webkit-transform: translateX(-8%)
-	65%
-		-webkit-transform: translateX(4%)
-	80%
-		-webkit-transform: translateX(-4%)
-	95%
-		-webkit-transform: translateX(2%)
-	100%
-		-webkit-transform: translateX(0%)
+  0%
+    -webkit-transform: translateX(150%)
+  50%
+    -webkit-transform: translateX(-8%)
+  65%
+    -webkit-transform: translateX(4%)
+  80%
+    -webkit-transform: translateX(-4%)
+  95%
+    -webkit-transform: translateX(2%)
+  100%
+    -webkit-transform: translateX(0%)
 
 
 
