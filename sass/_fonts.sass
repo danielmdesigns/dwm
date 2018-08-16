@@ -17,6 +17,9 @@
   font-weight: 400
 @mixin font-bold
   font-weight: 700
+  
+.font-bold
+  @include font-bold
 
 body
   @include font-16
@@ -33,26 +36,20 @@ h1
 h2
   @include font-bold
   font-size: 1.125rem
-  line-height: 1.625rem
+  line-height: 1.7rem
+  margin-bottom: .5rem
 	
 p
   display: block
   width: 100%
-  max-width: 550px
-  line-height: 24px
+  line-height: 1.5rem
   margin: 0 auto 2rem
-
-.bold-sansSerif
-  @include font-16
-  @include font-reg
-  font-weight: bold
 
 figcaption
   @include font-reg
-  font-size: 12px
+  font-size: 0.75rem
   text-align: center
-  font-style: italic
-  color: $grey
+  color: $black
 
 .text-center
   display: block
